@@ -177,6 +177,9 @@ class HydratedSubject<T> extends Subject<T> implements ValueObservable<T> {
 
   /// A unique key that references a storage container for a value persisted on the device.
   String get key => this._key;
+
+  @override
+  bool get hasValue => null;
 }
 
 class _Wrapper<T> {
